@@ -98,7 +98,6 @@
                         <span class="sidebar-text">Dashboard</span>
                     </a>
                 </li>
-
                 <li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>
                 <li class="nav-item">
                     <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/getting-started/quick-start/" target="_blank" class="nav-link d-flex align-items-center">
@@ -277,7 +276,7 @@
                     <p class="mb-0">Form untuk menambahkan data pelanggan baru.</p>
                 </div>
                 <div>
-                    <a href="" class="btn btn-primary"><i class="far fa-question-circle me-1"></i> Kembali</a>
+                    <a href="{{route('pelanggan.index')}}" class="btn btn-primary"><i class="far fa-question-circle me-1"></i> Kembali</a>
                 </div>
             </div>
         </div>
