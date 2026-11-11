@@ -28,43 +28,44 @@
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('assets-admin/img/favicon/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets-admin/img/favicon/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets-admin/img/favicon/favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="{{ asset('assets-admin/img/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="{{ asset('assets-admin/img/favicon/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('assets-admin/img/favicon/site.webmanifest') }}">
     <link rel="mask-icon" href="{{ asset('assets-admin/img/favicon/safari-pinned-tab.svg') }}" color="#ffffff">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
-
-
-    {{-- Start Css--}}
-    <!-- Volt CSS -->
+    {{-- Start Css --}}
     @include('layouts.admin.css')
-    {{-- end css--}}
+    {{-- End Css --}}
+
 </head>
 
 <body>
-    {{--Start sidebar--}}
+    {{-- Start Sidebar --}}
     @include('layouts.admin.sidebar')
-    {{--end sidebar--}}
+    {{-- End Sidebar --}}
+
     <main class="content">
-        {{--Start header--}}
+
+        {{-- Start Header --}}
         @include('layouts.admin.header')
-        {{--End header--}}
+        {{-- End Header --}}
 
-        {{--Start Main Content--}}
+        {{-- Start Main Content --}}
         @yield('content')
-        {{--End Main COntent--}}
+        {{-- End Main Content --}}
 
-        {{--Start footer--}}
+        {{-- Start footer --}}
         @include('layouts.admin.footer')
-        {{--End footer--}}
-
+        {{-- End Footer --}}
     </main>
 
-    {{--Start js--}}
+    {{-- Start Js --}}
     @include('layouts.admin.js')
-    {{--End js--}}
+    {{-- End Js --}}
 </body>
 
 </html>
